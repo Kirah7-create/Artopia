@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #eee;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo left, nav right */
+}
+
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centers and adds spacing below */
+}
+
+nav {
+    margin-left: auto; /* Pushes nav to the right */
+}
+
+.monthly-deals {
+    text-align: center; /* Centers all content inside this section */
+}
+
+.monthly_deals {
+    width: 300px !important; /* Adjust size as needed */
+    height: auto !important; /* Maintain aspect ratio */
+    display: block !important;
+    margin: 0 auto !important; /* Centers the image horizontally */
+}
+
+
+.featured-artists .slideshow {
+    display: flex; /* Arrange images in a row */
+    justify-content: center; /* Center the images horizontally */
+    gap: 15px; /* Adds spacing between images */
+}
+
+.featured-artists .slideshow img {
+    width: 45%; /* Adjust size to fit side by side */
+    max-width: 300px; /* Prevent them from getting too large */
+    height: auto; /* Keep the aspect ratio */
+    display: block;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.categories li {
+    list-style: none;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.product {
+    width: 200px; 
+    text-align: center; 
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 5px;
+}
+
+
+.cta div {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    background: rgb(128, 0, 4);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}

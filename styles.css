@@ -1,59 +1,27 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Mont, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 header {
-    background: #eee;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Logo left, nav right */
+    background-color: #ffffff;
+    border-bottom: 10px solid #72b3f5;
+    border-top: 5px dotted #15202b;
 }
-
 
 .logo {
-    width: 150px; /* Adjust size as needed */
+    width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto 10px; /* Centers and adds spacing below */
 }
-
-nav {
-    margin-left: auto; /* Pushes nav to the right */
-}
-
-.monthly-deals {
-    text-align: center; /* Centers all content inside this section */
-}
-
-.monthly_deals {
-    width: 300px !important; /* Adjust size as needed */
-    height: auto !important; /* Maintain aspect ratio */
-    display: block !important;
-    margin: 0 auto !important; /* Centers the image horizontally */
-}
-
-
-.featured-artists .slideshow {
-    display: flex; /* Arrange images in a row */
-    justify-content: center; /* Center the images horizontally */
-    gap: 15px; /* Adds spacing between images */
-}
-
-.featured-artists .slideshow img {
-    width: 45%; /* Adjust size to fit side by side */
-    max-width: 300px; /* Prevent them from getting too large */
-    height: auto; /* Keep the aspect ratio */
-    display: block;
-}
-
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -64,61 +32,76 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    color: #000;
 }
 
-h1, h2 {
-    color: #333;
+.nav-link.active {
+    color: #007bff;
 }
 
-.categories {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-}
-
-.categories li {
-    list-style: none;
-    padding: 10px 15px;
-    border: 1px solid #333;
-    cursor: pointer;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 20px; 
-}
-
-.product {
-    width: 200px; 
-    text-align: center; 
-}
-
-.product img {
+.ad-image {
+    max-width: 300px;
     width: 100%;
     height: auto;
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    padding: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
-
-.cta div {
-    margin: 20px;
+.artist-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-button {
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+button,
+.btn {
     padding: 10px;
-    background: rgb(128, 0, 4);
+    background: #bc3d02;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
+.btn-primary {
+    background: #bc3d02;
+    border: none;
 }
+
+footer {
+    background-color: #bc3d02;
+    border-top: 10px solid #15202b;
+    border-bottom: 10px dotted #608137;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.left-nav-list {
+    text-align: left;
+}
+.left-nav-list ul {
+    display: inline-block;
+    text-align: left;
+}
+
